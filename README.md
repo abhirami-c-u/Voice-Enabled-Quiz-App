@@ -10,14 +10,14 @@ An interactive, voice-narrated quiz web app built using **Python (Flask)**, **HT
 - 📊 Score visualization with Matplotlib (pie chart)
 - 📈 Visual progress bar for time tracking
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript (Web Speech API)
 - **Backend**: Python (Flask)
 - **Visualization**: Matplotlib
 - **Data**: CSV-based question bank
 
-## 🎯 What You’ll Learn
+## What You’ll Learn
 
 - Building RESTful APIs with Flask  
 - Integrating browser-based text-to-speech  
