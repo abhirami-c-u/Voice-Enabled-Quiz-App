@@ -4,11 +4,11 @@ An interactive, voice-narrated quiz web app built using **Python (Flask)**, **HT
 
 ## Features
 
-- 🔀 Random questions loaded from CSV
-- 🗣️ Voice narration using Web Speech API
-- ⏱️ Countdown timer with instant scoring
-- 📊 Score visualization with Matplotlib (pie chart)
-- 📈 Visual progress bar for time tracking
+-  Random questions loaded from CSV
+-  Voice narration using Web Speech API
+-  Countdown timer with instant scoring
+-  Score visualization with Matplotlib (pie chart)
+-  Visual progress bar for time tracking
 
 ##  Tech Stack
 
