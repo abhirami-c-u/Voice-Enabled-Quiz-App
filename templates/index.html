@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>The Quiz Hub</h1>
+
+        <label for="category">Choose Category:</label>
+        <select id="category">
+            <option value="">Loading categories...</option>
+        </select>
+
+        <label for="audio">Enable Audio?</label>
+        <input type="checkbox" id="audio">
+
+        <button id="startQuiz">Start Quiz</button>
+
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="timer">Time Left: <span id="timeLeft">50</span>s</p>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+        
+        <button id="nextQuestion" style="display: none;">Next Question</button>
+        <div id="instructions">
+            <h2>General Instructions</h2>
+            <ul>
+                <li>The quiz consists of multiple-choice questions from various categories.</li>
+                <li>Answer quickly to earn more points!</li>
+                <li>Each question has four options, and you must select the correct one.</li>
+                <li>No negative marking for incorrect answers.</li>
+                <li>Your total score will be displayed at the end.</li>
+                <li>Try to complete the quiz in the shortest time...Good Luck!</li>
+            </ul>
+        </div>
+        
+        <div id="final-score" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p>Total Score: <span id="score"></span> out of 100</p>
+            <p>Total Questions: <span id="total-questions"></span></p>
+            <p>✅ Correct Answers: <span id="correct-answers">0</span></p>
+            <p>❌ Incorrect Answers: <span id="incorrect-answers">0</span></p>
+            <p>⏱️ Timeout Questions: <span id="timeout-questions">0</span></p>
+            <p id="comment"></p>
+            <button id="retakeQuiz" style="display: block;">Retake Test</button>
+            <div id="chart-section" style="display: none; text-align: center; margin-top: 20px;">
+                <h3>Performance Chart</h3>
+                <img id="resultChart" src="" alt="Result Chart" style="max-width: 500px;" />
+            </div>
+            
+
+        </div>
+        
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        document.getElementById("startQuiz").addEventListener("click", function () {
+            document.getElementById("instructions").style.display = "none"; // Hide instructions
+            document.getElementById("startQuiz").style.display = "none"; // Hide Start button
+            document.getElementById("quizContainer").style.display = "block"; // Show Quiz
+        });
+        </script>
+        
+        
+</body>
+</html>

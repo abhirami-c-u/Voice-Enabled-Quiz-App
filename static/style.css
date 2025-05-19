@@ -1,0 +1,261 @@
+/* General Styling */
+body {
+    background-image: url('background.avif'); /* Path to your image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    height: 100vh; /* Full height */
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* App Heading Styling */
+h1 {
+    font-size: 48px; /* Increase size */
+    font-weight: bold;
+    font-family: 'Pacifico', cursive; /* Catchy, stylish font */
+    color: #ff5722; /* Vibrant orange-red */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for 3D effect */
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Add Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* Dropdown Styling */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#startQuiz {
+    margin-top: 15px;
+}
+
+/* Quiz Container */
+#quiz-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#options button {
+    width: 80%;
+    margin: 5px 0;
+    background: #0aafeb;
+    transition: background 0.3s;
+}
+
+#options button:hover {
+    background: #218838;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #dc3545;
+}
+
+/* Progress Bar */
+progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+/* Final Report Styling */
+#final-score {
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff3cd; /* Soft yellow */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#final-score h2 {
+    color: #856404; /* Darker brownish-yellow */
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Score Details */
+#score,
+#total-questions,
+#correct-count,
+#incorrect-count {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Correct & Incorrect Answer Count */
+.correct-text {
+    color: #28a745; /* Green */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.incorrect-text {
+    color: #dc3545; /* Red */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Comment Styling */
+#comment {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Dynamic Comment Backgrounds */
+.excellent {
+    background: #4CAF50; /* Green */
+    color: white;
+}
+
+.good {
+    background: #FFC107; /* Yellow */
+    color: black;
+}
+
+.average {
+    background: #FF9800; /* Orange */
+    color: white;
+}
+
+.poor {
+    background: #F44336; /* Red */
+    color: white;
+}
+
+/* Retake Quiz Button */
+#retakeQuiz {
+    background: #007BFF;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#retakeQuiz:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+#instructions {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#instructions h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#instructions li {
+    font-size: 18px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#instructions li::before {
+   
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
